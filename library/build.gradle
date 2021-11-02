@@ -4,7 +4,7 @@ apply plugin: 'maven-publish'
 
 android {
     compileSdkVersion 29
-    ndkVersion "21.1.6352462"
+    android.ndkVersion "21.1.6352462"
 
 
     defaultConfig {
@@ -54,7 +54,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.github.leiainc.youtubedl-android'
                 artifactId = 'final'
-                version = '1.0.0'
+                version = '1.0.2'
             }
             // Creates a Maven publication called “debug”.
             debug(MavenPublication) {
